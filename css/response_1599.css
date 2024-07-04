@@ -1,0 +1,714 @@
+@media print,
+(max-width: 1599px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 18px;
+        --font_size_title: 28px;
+    }
+
+
+    .cont
+    {
+        padding: 0 43px;
+    }
+
+
+    .wrap
+    {
+        transition: transform .7s cubic-bezier(.5, .2, .3, 1.2);
+    }
+
+    .menu_open .wrap
+    {
+        transition: transform .9s cubic-bezier(.5, .2, .3, 1.2);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 30px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 169px;
+    }
+
+
+    header .menu_btn
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+    /*----------------
+        Menu modal
+    ----------------*/
+    .menu_modal
+    {
+        transition: transform .8s cubic-bezier(.5, .2, .3, 1.2);
+    }
+
+
+    .menu_modal.show
+    {
+        transition: transform .9s cubic-bezier(.5, .2, .3, 1.2);
+    }
+
+
+    .menu_modal .close_btn
+    {
+        top: 30px;
+        right: 40px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .menu_modal .scroll
+    {
+        padding: 60px 0;
+    }
+
+
+    .menu_modal .menu
+    {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+
+    .menu_modal .menu > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .menu_modal .logo img
+    {
+        width: 169px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 48px;
+        padding: 32px 0 43px;
+    }
+
+
+    .page_head:after
+    {
+        bottom: 32px;
+    }
+
+
+    .page_title
+    {
+        line-height: normal;
+
+        width: 676px;
+    }
+
+    .page_head.no_m .page_title
+    {
+        width: 376px;
+    }
+
+
+    .page_desc
+    {
+        font-size: 16px;
+
+        width: 440px;
+        margin-left: 40px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 48px;
+        padding: 32px 0 43px;
+    }
+
+    .block_head.center
+    {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+
+
+    .block_head:after
+    {
+        bottom: 32px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: normal;
+
+        width: 540px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .cols .col
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*------------
+        Cookie
+    ------------*/
+    .cookie .btn
+    {
+        width: 168px;
+        height: 44px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .logo svg,
+    .first_section .logo img
+    {
+        width: 560px;
+    }
+
+
+    .first_section .scroll_btn
+    {
+        bottom: 40px;
+
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .first_section .scroll_btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    /*-----------
+        Today
+    -----------*/
+    .today .desc
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .today .link a .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients
+    {
+        padding: 56px 0;
+    }
+
+
+    .clients .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .clients .data
+    {
+        padding: 0 60px;
+    }
+
+
+    .clients .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+    }
+
+
+    .clients .row > *
+    {
+        width: calc(16.666% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding-top: 47px;
+    }
+
+
+    .error_info .link
+    {
+        margin-top: 40px;
+    }
+
+
+    .error_info .link .btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    /*-------------
+        Service
+    -------------*/
+    .service .steps .number
+    {
+        font-size: 64px;
+        line-height: 116px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .service .steps .name
+    {
+        font-weight: 400;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 532px;
+        padding-top: 1px;
+    }
+
+
+    .contacts_info .text_block
+    {
+        width: 512px;
+        max-width: 100%;
+        margin-bottom: 46px;
+    }
+
+
+    .contacts_info .data .row
+    {
+        margin-bottom: -64px;
+    }
+
+
+    .contacts_info .data .row > *
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: 549px;
+        max-width: 100%;
+        height: 390px;
+    }
+
+
+
+    /*-----------------
+        Object info
+    -----------------*/
+    .object_info .data
+    {
+        padding: 40px 0;
+    }
+
+
+    .object_info .info
+    {
+        width: 488px;
+    }
+
+
+    .object_info .info .name
+    {
+        font-size: var(--font_size_title);
+        line-height: normal;
+
+        width: 100%;
+    }
+
+
+    .object_info .info .bottom
+    {
+        padding-top: 23px;
+    }
+
+
+    .object_info .slider
+    {
+        width: calc(100% - 590px);
+        max-width: 100%;
+    }
+
+
+    .object_info .slider .image
+    {
+        min-height: 340px;
+    }
+
+
+    .object_info .all_link
+    {
+        margin-top: 33px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .data .block_head
+    {
+        padding: 56px 0;
+    }
+
+
+    .objects .data .block_head .title
+    {
+        width: 376px;
+    }
+
+
+    .objects .data .block_head .desc
+    {
+        font-size: 16px;
+
+        width: 376px;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+
+    .objects .data .block_head .all_link .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .objects .swiper-button-prev
+    {
+        left: -20px;
+    }
+
+    .objects .swiper-button-next
+    {
+        right: -20px;
+    }
+
+
+    .objects .row > *
+    {
+        width: calc(33.3333% - 16px);
+    }
+
+
+    .objects .object
+    {
+        padding: 20px;
+    }
+
+
+    .objects .more_btn
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .objects .more_btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .stats
+    {
+        width: 530px;
+    }
+
+
+    .about_info .stats .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+    }
+
+
+    .about_info .stats .row > *
+    {
+        width: 245px;
+        max-width: calc(50% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+    .about_info .stats .row > *.big
+    {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
+
+    .about_info .stats .val
+    {
+        font-size: 64px;
+        line-height: 116px;
+
+        width: 250px;
+        margin-bottom: 24px;
+    }
+
+
+    .about_info .stats .name
+    {
+        font-weight: 400;
+    }
+
+
+    .about_info .map
+    {
+        width: 630px;
+        margin-right: 0;
+    }
+
+
+    .about_info .map .image img
+    {
+        width: 543px;
+    }
+
+
+    .about_info .map .markers
+    {
+        margin-top: 14px;
+    }
+
+
+    .about_info .map .markers .row
+    {
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+
+
+    .about_info .map .markers .row > *
+    {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .about_info .map .markers .icon
+    {
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+    }
+
+
+    .about_info .map .exp
+    {
+        font-size: 12px;
+        line-height: normal;
+
+        padding-left: 5px;
+    }
+
+
+
+    /*----------------
+        About desc
+    ----------------*/
+    .about_desc
+    {
+        padding: 40px 0;
+    }
+
+
+
+    /*----------------
+        Directions
+    ----------------*/
+    .directions
+    {
+        padding: 0;
+    }
+
+
+    .directions .item
+    {
+        width: 380px;
+        height: 380px;
+        padding: 40px;
+    }
+
+
+    .directions .item .name
+    {
+        font-size: 24px;
+
+        width: 240px;
+    }
+
+
+    .directions .item .arrow
+    {
+        bottom: 40px;
+    }
+
+
+    .directions .item .desc
+    {
+        width: 320px;
+        margin-top: 32px;
+    }
+
+
+    .directions .item .desc > *
+    {
+        padding-top: 40px;
+    }
+
+
+    .directions .item.active
+    {
+        width: 520px;
+        height: 520px;
+        padding-bottom: 80px;
+    }
+
+
+    .directions .item:nth-child(1).active + *,
+    .directions .item:nth-child(2).active
+    {
+        margin-right: -184px;
+        margin-left: -184px;
+    }
+
+
+
+    /*----------------
+        Priorities
+    ----------------*/
+    .priorities
+    {
+        padding: 60px 0;
+    }
+
+
+    .priorities .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .priorities .block_head:after
+    {
+        left: 520px;
+    }
+
+
+    .priorities .item .number
+    {
+        font-size: 64px;
+        line-height: 116px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .priorities .item .name
+    {
+        font-weight: 400;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .logo img
+    {
+        width: 132px;
+    }
+
+
+    footer .menu
+    {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+    footer .menu > * + *
+    {
+        margin-left: 24px;
+    }
+}
