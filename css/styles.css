@@ -316,7 +316,7 @@ button
 ------------*/
 .animate
 {
-    transition: opacity .2s linear;
+    transition: opacity .5s linear;
     transition-delay: .2s;
 
     opacity: 0;
@@ -335,17 +335,27 @@ button
 
 .animate.delay2
 {
-    transition-delay: .55s;
+    transition-delay: .6s;
 }
 
 .animate.delay3
 {
-    transition-delay: .7s;
+    transition-delay: .8s;
 }
 
 .animate.delay4
 {
-    transition-delay: .85s;
+    transition-delay: 1s;
+}
+
+
+
+/*--------------
+    Fancybox
+--------------*/
+.fancybox__backdrop
+{
+    background: #f2f2f2;
 }
 
 
@@ -1804,6 +1814,38 @@ header .menu_btn:hover .icon
 /*----------------
     About info
 ----------------*/
+.about_info
+{
+    position: relative;
+}
+
+
+.about_info.line::before
+{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 316px;
+
+    content: '';
+    pointer-events: none;
+
+    background: #f2f2f2;
+}
+
+
+.about_info .cont
+{
+    position: relative;
+    z-index: 3;
+}
+
+
 .about_info .stats
 {
     width: 751px;
@@ -1877,6 +1919,75 @@ header .menu_btn:hover .icon
 
     max-width: 100%;
     margin: 0 auto;
+}
+
+
+.about_info .map .mob_image
+{
+    position: relative;
+
+    display: block;
+
+    width: 256px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.about_info .map .mob_image .zoom
+{
+    position: absolute;
+    z-index: 3;
+    top: -20px;
+    right: -20px;
+
+    width: 28px;
+    height: 28px;
+
+    border: 1px dashed #1c1c1c;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.about_info .map .mob_image .zoom:before,
+.about_info .map .mob_image .zoom:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 45%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+
+    background: #000;
+}
+
+
+.about_info .map .mob_image .zoom:after
+{
+    width: 1px;
+    height: 45%;
+}
+
+
+.about_info .map .mob_image img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
@@ -2551,4 +2662,48 @@ footer .privacy_policy_link a
     color: currentColor;
 
     text-decoration-thickness: 1px;
+}
+
+
+
+
+@media print,
+(max-width: 1899px)
+{
+    .cont
+    {
+        padding: 0 60px;
+    }
+
+
+    .directions .item
+    {
+        width: 460px;
+        height: 460px;
+    }
+
+    .directions .item.active
+    {
+        width: 620px;
+        height: 620px;
+    }
+
+    .directions .item:nth-child(1).active + *,
+    .directions .item:nth-child(2).active
+    {
+        margin-right: -190px;
+        margin-left: -190px;
+    }
+
+
+    .about_info .stats
+    {
+        width: 620px;
+    }
+
+
+    .about_info .map
+    {
+        margin-right: 0;
+    }
 }

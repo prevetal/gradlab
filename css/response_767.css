@@ -353,6 +353,16 @@
     /*----------------
         About info
     ----------------*/
+    .about_info.line:before
+    {
+        top: 60px;
+
+        display: block;
+
+        height: 220px;
+    }
+
+
     .about_info .stats .row
     {
         display: flex;
@@ -378,6 +388,18 @@
     {
         font-size: 64px;
     }
+
+
+    .about_info .map .image
+    {
+        display: none;
+    }
+
+    .about_info .map .mob_image
+    {
+        display: block;
+    }
+
 
     .about_info .map .exp
     {

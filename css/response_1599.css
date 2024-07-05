@@ -479,6 +479,12 @@
     /*----------------
         About info
     ----------------*/
+    .about_info.line:before
+    {
+        display: none;
+    }
+
+
     .about_info .stats
     {
         width: 530px;
