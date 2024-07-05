@@ -1926,7 +1926,7 @@ header .menu_btn:hover .icon
 {
     position: relative;
 
-    display: block;
+    display: none;
 
     width: 256px;
     max-width: 100%;
